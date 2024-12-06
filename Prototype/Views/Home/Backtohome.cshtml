@@ -1,0 +1,85 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav ul li a:hover {
+                    color: #ea1538;
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                alert("Successfully Registerded");
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col=sm-6 col-sm-offset- -1">
+                <div class="panel panel-success">
+                    <div class="panel panel-heading">
+                        <h1 style="text-align: center;"> Registeration-form</h1>
+                    </div>
+                    <div class="panel panel-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name"> Name:</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="name1"> Last Name:</label>
+                                <input type="text" class="form-control" id="name1" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Gender:</label><br>
+                                <div style="letter-spacing:1px;">
+                                    <label> <input type="radio" name="gender" id="male" class="radio-inlune" required> Male </label>
+                                    <label> <input type="radio" name="gender" id="female" class="radio-inlune" required> Fe-male </label>
+                                    <label> <input type="radio" name="gender" id="other" class="radio-inlune" required> Other </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="fname"> Fathers Name:</label>
+                                <input type="text" class="form-control" id="fname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Number"> Fathers Number:</label>
+                                <input type="text" class="form-control" id="Number" required>
+                            </div>
+                            <center><button type="submit" class="btn btn-success"> Submit</button> </center>
+                        </form>
+                    </div>
+                    <div class="panel panel-footer" style="text-align: end;">
+                        <small>  &copy;Technical Kiddos</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
